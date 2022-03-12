@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generator haseł</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="pw">
+        <input name="generated-password" id="generated-password" disabled />
+      </div>
+      <div class="form-control">
+        <label for="password-length">Długość hasła</label>
+        <input type="number" value="10" min="8" max="20" id="password-length" />
+      </div>
+      <div class="form-control">
+        <label for="lower-checkbox">Małe litery</label>
+        <input type="checkbox" checked id="lower-checkbox" />
+      </div>
+      <div class="form-control">
+        <label for="upper-checkbox">Duże litery</label>
+        <input type="checkbox" id="upper-checkbox" />
+      </div>
+      <div class="form-control">
+        <label for="symbol-checkbox">Symbole</label>
+        <input type="checkbox" id="symbol-checkbox" />
+      </div>
+      <div class="form-control">
+        <label for="number-checkbox">Cyfry</label>
+        <input type="checkbox" id="number-checkbox" />
+      </div>
+      <button id="generate-btn">Generuj</button>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
